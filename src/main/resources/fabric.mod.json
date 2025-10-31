@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "growaura",
+  "version": "1.0",
+  "name": "GrowAura",
+  "description": "Instantly bonemeals blocks around you. Toggle and adjust radius easily.",
+  "authors": [
+    "Komi_san_100",
+    "ChatGPT"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.deku.instantbonemeal.client.InstantBonemealClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric-api": "*",
+    "fabric-key-binding-api-v1": "*",
+    "fabric-command-api-v2": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "description": "Toggle instant bonemeal around you with a keybind (default: G). Adjust radius with /bmr.",
+      "parent": "fabric-api"
+    }
+  }
+}
